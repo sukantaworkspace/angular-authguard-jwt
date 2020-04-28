@@ -7,18 +7,17 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AppMaterialModule } from '../app-material/app-material.module';
 //import { AuthService, AuthGuard } from './';
-import { ReactiveFormsModule } from '@angular/forms';
-import { ChildComponent } from './home/child.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AccountComponent,
     LoginComponent,
     HomeComponent,
-    ChildComponent,
   ],
   imports: [
     CommonModule,
+    FormsModule,
     ReactiveFormsModule,
     AccountRoutingModule,
     AppMaterialModule,

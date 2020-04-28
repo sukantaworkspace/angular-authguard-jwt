@@ -16,17 +16,19 @@ export class HomeComponent implements OnInit {
   constructor(
     private newsService: NewsServiceService,
     private authService: AuthService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.authService.startLoading();
+    this.stopLoader();
+    /* don't call if url/ returned data is not known
     this.results = this.newsService.search(
-      'http://newsapi.org/v2/top-headlines?country=in&apiKey=d88837678f904443affbc28f7ee13ce1'
+      'some url'
     );
     this.results.subscribe((object: News[]) => {
       this.newsObservable.next(object);
       this.stopLoader();
-    });
+    });*/
   }
   stopLoader() {
     this.authService.stopLoading();

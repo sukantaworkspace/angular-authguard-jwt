@@ -16,9 +16,9 @@ import { fakeBackendProvider } from './account/auth/helpers/fake-backend';
   declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppMaterialModule,
