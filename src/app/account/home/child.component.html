@@ -1,0 +1,16 @@
+  <div class="card">
+        <div class="imageCont">
+            <img class="image" src={{newsItem.urlToImage}}>
+        </div>
+            
+            <div class="card-body">
+                <h4 class="card-title title font-weight-bold">{{newsItem.title}}</h4>
+                <h5 class="author">By {{newsItem.author}}, Editors at {{newsItem.sourceName}}</h5>
+              
+                <p class="detail">{{newsItem.description}}</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Published at {{newsItem.publishedAt}}</small>
+               <a style="color: red;" class="read-more" href="{{newsItem.url}}" target="_blank">read more >>> </a>
+            </div>
+    </div>

@@ -16,7 +16,9 @@
  
 <mat-toolbar color="primary" *ngIf="currentUser">
    <mat-toolbar-row>
-    <span>Dashboard</span> 
+    <span><button mat-button routerLink="/" class="example-icon" *ngIf="currentUser">Dashboard</button></span> 
+    <span><button type="button" class="btn btn-danger" routerLink="/custforms/loan"> Forms</button></span>
+    <span><button type="button" style="margin-left: 9px;" class="btn btn-success">Warning</button></span>
     <span class="example-spacer"></span>
     <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
     <button mat-button (click)="onLogout()" class="example-icon" *ngIf="currentUser">Logout</button>

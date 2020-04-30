@@ -2,7 +2,9 @@
     <h2>Head Lines</h2>
     <div class="panel panel-default">
         <div class="panel-body"> 
-                    Put your form here
+            <div id="style1" class="card-deck">
+                    <app-child class="row container" *ngFor="let item of newsObservable | async" [news]="item"></app-child>
+            </div>
         </div>
     </div>
 </div>
